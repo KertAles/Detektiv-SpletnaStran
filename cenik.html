@@ -1,0 +1,352 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="slike/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="slike/icon.ico" type="image/ico" />
+    <link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>
+			Sherlock - Cenik
+		</title>
+  </head>
+  <body>
+    <div class="nav">
+        <ul class="navbar">
+            <li><a class="menuLogo" href="home.html"><img src="slike/MenuLogo.png"/></a></li>
+            <li><a class="menuItem" href="home.html">Domov</a></li>
+            <li> <a class="menuItem" href="storitve.html">Storitve</a></li>
+            <li> <a class="menuItem active" href="cenik.html">Cenik</a></li>
+            <li style="float:right"><a class="menuItem" href="kontakt.html">Kontakt</a></li>
+            <li style="float:right"><a class="menuItem" href="about.html">O nas</a></li>
+        </ul>
+    </div>
+
+    <div class="mainOther">
+
+      <div class="cenikTextBox">
+        <h1>
+        Cenik storitev
+        </h1>
+          <p>
+            V Sloveniji zasebni detektivi še nimamo enotnega cenika. Detektivsko delo ni lahko in ni poceni.
+          </p>
+        <p>
+          Po priporočilu Detektivske Zbornice Republike Slovenije je priporočena cena urne postavke detektiva za terensko delo 70 EUR,
+        v praksi pa so najnižje cena urne postavke detektiva za terensko delo 40 EUR na uro.
+        K tej vsoti je potrebno prišteti še vse stroške kilometrine, cestnine, parkirnine, takse in druge materialne stroške.
+          </p>
+        <p>
+          Lahko se pogodimo tudi za pavšal, kar se običajno izkaže kot najboljša rešitev, še zlasti, kadar gre za zahtevnejši primer.
+        Večina detektivov se s stranko dogovorimo za limit, do katerega lahko sami presojamo o upravičenosti stroška, medtem ko za strošek nad limitom
+        potrebujemo pristanek stranke.
+          </p>
+      </div>
+
+
+
+      <script type="text/javascript">
+            function setCookie(nStoritev) {
+                var d = new Date();
+                d.setTime(d.getTime() + (24*60*60*1000));
+                var expires = "expires="+ d.toUTCString();
+                document.cookie = "storitev=" + nStoritev + ";" + expires + ";path=/";
+            }
+
+            function cenikChangeStoritev(nStoritev) {
+              setCookie(nStoritev);
+              window.location.replace("storitve.html");
+            }
+      </script>
+
+      <div class="storitevSection">
+        <button onclick="cenikChangeStoritev(0)" class="storitevButton">Splošno</button>
+        <button onclick="cenikChangeStoritev(1)" class="storitevButton">Osebna zaznava</button>
+        <button onclick="cenikChangeStoritev(2)" class="storitevButton">Zvestoba partnerjev</button>
+        <button onclick="cenikChangeStoritev(3)" class="storitevButton">Vročanje</button>
+        <button onclick="cenikChangeStoritev(4)" class="storitevButton">Dokazno gradivo</button>
+        <button onclick="cenikChangeStoritev(5)" class="storitevButton">Disciplinske kršitve</button>
+        <button onclick="cenikChangeStoritev(6)" class="storitevButton">Dolžniki</button>
+        <button onclick="cenikChangeStoritev(7)" class="storitevButton">Pogrešani predmeti</button>
+        <button onclick="cenikChangeStoritev(8)" class="storitevButton">Pogrešane/skrite os.</button>
+        <button onclick="cenikChangeStoritev(9)" class="storitevButton">Mladostniki</button>
+        <button onclick="cenikChangeStoritev(10)" class="storitevButton">Povzročitelji škode</button>
+        <button onclick="cenikChangeStoritev(11)" class="storitevButton">Business intelligence</button>
+        <button onclick="cenikChangeStoritev(12)" class="storitevButton">Tatvine - kraje</button>
+        <button onclick="cenikChangeStoritev(13)" class="storitevButton">Druge storitve</button>
+      </div>
+
+      <div class="textBox">
+        <p>
+			Naročnik vedno poravna del materialnih stroškov vnaprej, najmanjši znesek je polog polovice pogodbene cene.
+			Z delom pričnem šele po poravnavi dogovorjenega avansa.
+        </p>
+		<p>
+			V primeru, da detektiv ne doseže želenih rezultatov naročnika in da kljub vsemu trudu, znanju, izkušnjam in delu, ki ga je vložil v reševanje,
+			ne more rešiti problema oziroma so rezultati in ugotovitve drugačni od pričakovanj naročnika, je naročnik dolžan izplačati pogodbeno dogovorjeni znesek.
+		</p>
+
+
+		<h2>
+			Cene za nekatere storitve
+		</h2>
+		<p class="cenikTitle">
+			Potni stroški so 0,31 EUR / km.
+		</p>
+		<p class="cenikTitle">
+			DETEKTIVSKA URA
+		</p>
+		<table class="cenikTabela">
+			<tr>
+				<td>
+					Terensko delo do 10 ur
+				</td>
+				<td>
+					60 EUR / h
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Terensko delo do 10 ur
+				</td>
+				<td>
+					60 EUR / h
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Terensko delo do 10 ur
+				</td>
+				<td>
+					60 EUR / h
+				</td>
+			</tr>
+		</table>
+		<p class="cenikP">
+			V primerih, ko je za rešitev primera potrebno večje število detektivov se cena za vsakega detektiva sorazmerno poveča.
+		</p>
+		<p class="cenikTitle">
+			KONTROLA BOLNIŠKEGA STALEŽA
+		</p>
+		<table class="cenikTabela">
+			<tr>
+				<td>
+					Kontrola na domu med 7h in 20h 1X
+				</td>
+				<td>
+					100 EUR / obisk
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kontrola na domu med 7h in 20h 2X
+				</td>
+				<td>
+					90 EUR / obisk
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kontrola na domu med 7h in 20h 3X
+				</td>
+				<td>
+					80 EUR / obisk
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kontrola na domu med 7h in 20h več kot 3X
+				</td>
+				<td>
+					Pavšalni znesek
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Pridobitev bolniškega reda od osebnega zdravnika
+				</td>
+				<td>
+					50 EUR
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Nadzor zaposlenega na bolniški (cene za terensko delo)
+				</td>
+				<td>
+					60 EUR / h
+				</td>
+			</tr>
+		</table>
+		<p class="cenikTitle">
+			OSEBNO VROČANJE
+		</p>
+		<table class="cenikTabela">
+			<tr>
+				<td>
+					Osebna vročitev
+				</td>
+				<td>
+					100 EUR
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Dodatek, če je potrebno osebo še izslediti
+				</td>
+				<td>
+					60 EUR / h
+				</td>
+			</tr>
+		</table>
+		<p class="cenikTitle">
+			TATVINE / KRAJE
+		</p>
+		<table class="cenikTabela">
+			<tr>
+				<td>
+					Postavitev pasti / video 9-ur snemanja
+				</td>
+				<td>
+					250 EUR
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Postavitev pasti / gel
+				</td>
+				<td>
+					500 EUR
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Nakup, navezovanje stikov z osebami katere kradejo stvari iz podjetja ali doma
+				</td>
+				<td>
+					1.000 EUR
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Opazovanje objekta in podobno
+				</td>
+				<td>
+					60 EUR / h
+				</td>
+			</tr>
+		</table>
+		<p class="cenikTitle">
+			POLITIKA IZVAJANJA PREDZAPOSLITVENIH POIZVEDB
+		</p>
+		<table class="cenikTabela">
+			<tr>
+				<td>
+					Poizvedba 1 oseba
+				</td>
+				<td>
+					500 EUR
+				</td>
+			</tr>
+		</table>
+		<p class="cenikTitle">
+			PREIZKUS ALKOHOLIZIRANOSTI / TEST NA DROGE
+		</p>
+		<table class="cenikTabela">
+			<tr>
+				<td>
+					Preizkus alkoholiziranosti
+				</td>
+				<td>
+					100 EUR / preizkus
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Test na droge
+				</td>
+				<td>
+					200 EUR - 1.000 EUR
+				</td>
+			</tr>
+		</table>
+		<p class="cenikTitle">
+			KONTROLA ZLORABE POTNIH STROŠKOV
+		</p>
+		<table class="cenikTabela">
+			<tr>
+				<td>
+					Kontrola / nadzor zaposlenega na bolniški (terensko delo)
+				</td>
+				<td>
+					60 EUR / h
+				</td>
+			</tr>
+		</table>
+		<p class="cenikTitle">
+			ISKANJE PREMOŽENJA DOLŽNIKOV
+		</p>
+		<table class="cenikTabela">
+			<tr>
+				<td>
+					Poizvedba
+				</td>
+				<td>
+					200 EUR - 1.000 EUR
+				</td>
+			</tr>
+		</table>
+
+      </div>
+
+      <div class="footer">
+				<div style="margin-left: 3%;">
+					<p class="location">
+						Ljubljana:
+					</p>
+					<p>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						+386 (0)80 911 911
+					</p>
+					<p>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<a href="mailto:sherlock@gmail.com">sherlock@gmail.com</a>
+					</p>
+				</div>
+				<div style="margin-left: 3%;">
+					<p class="location">
+						London:
+					</p>
+					<p>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						+44 911 666
+					</p>
+					<p>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<a href="mailto:sherlockLondon@gmail.com">sherlockLondon@gmail.com</a>
+					</p>
+				</div>
+				<div class="picture">
+          <a href="http://www.i-k-d.com">
+          <img src="slike/IKD-Logo.jpg">
+          </a>
+
+          <a href="http://www.detektivska-zbornica-rs.si/">
+          <img src="slike/Detektivska-zbornica-logo.png	">
+          </a>
+				</div>
+				<hr>
+				<div class="podn">
+					<p>
+						©2017 Detektiv Sherlock Holmes, s.p. | Vse pravice pridržane
+					</p>
+					<p>
+						Designed by
+						<span style="color:#FFA71A">
+							The Dream Team
+						</span>
+					</p>
+				</div>
+			</div>
+    </div>
+  </body>
+</html>

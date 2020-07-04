@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="slike/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="slike/icon.ico" type="image/ico" />
+    <script src="form_check.js"></script>
+    <link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>
+			Sherlock - Kontakt
+		</title>
+  </head>
+  <body>
+    <div class="nav">
+        <ul class="navbar">
+            <li><a class="menuLogo" href="home.html"><img src="slike/MenuLogo.png"/></a></li>
+            <li><a class="menuItem" href="home.html">Domov</a></li>
+            <li> <a class="menuItem" href="storitve.html">Storitve</a></li>
+            <li> <a class="menuItem" href="cenik.html">Cenik</a></li>
+            <li style="float:right"><a class="menuItem active" href="kontakt.html">Kontakt</a></li>
+            <li style="float:right"><a class="menuItem" href="about.html">O nas</a></li>
+        </ul>
+    </div>
+    <div class="mainOther">
+      <div class="kontaktTextBox">
+        <p>Detektiv Sherlock Holmes, s.p.<br/>
+          Vegova 4<br/>
+          1000 Ljubljana<br/>
+        </p>
+          <br/>
+          <p style="font-weight:600; margin-top: -10px;">Ljubljana in ostala Slovenija : </p>
+          <p style="margin-top: -15px;">Detektiv z licenco številka 007.<br/>
+          Sherlock Holmes<br/>
+          <i class="fa fa-phone" aria-hidden="true"></i>  +386 (0)80 911 911<br/>
+          <i class="fa fa-envelope" aria-hidden="true"></i>  sherlock@gmail.com<br/>
+          <p>
+          <p style="font-weight:600;">London :</p>
+          <p style="margin-top: -15px;">Detektiv z licenco številka  007.<br/>
+          <i class="fa fa-phone" aria-hidden="true"></i> +44 911 666<br/>
+          <i class="fa fa-envelope" aria-hidden="true"></i> sherlockLondon@gmail.com<br/>
+          <p>
+      </div>
+
+      <div class="kontaktFormBox">
+        <form method="post" onsubmit="return checkValidity(this);" action="kontakt.html" id="forma"> <!-- action lahko proži zapis v bazo-->
+          <input type="text"  name="ime" placeholder="Ime" required="required"/><br/>
+          <input type="text"  name="priimek" placeholder="Priimek" required="required"/><br/>
+          <input type="text"  name="podjetje" placeholder="Podjetje"/><br/>
+          <input type="text"  name="email" placeholder="E-mail" required="required"/><br/>
+          <input type="text"  name="telefon" placeholder="Telefon" required="required"/><br/>
+          <select  name="drzava">
+            <option value="SLO">Slovenija</option>
+            <option value="ENG">England</option>
+            <option value="FRA">Francija</option>
+            <option value="SEA">Sealand</option>
+          </select><br/>
+          <textarea rows="5" cols="40" name="sporocilo" placeholder="Sporočilo" required="required"/></textarea>
+          <input class="radioButton" type="radio"  name="kontaktPo" value="email" checked="checked"/><label style="font-size: 14px">Odgovor po e-mailu</label><br/>
+          <input class="radioButton" type="radio"  name="kontaktPo" value="telefon"/><label style="font-size: 14px">Odgovor po telefonu</label><br/>
+          <button type="submit" class="submitButton"> Pošlji </button>
+        </form>
+      </div>
+
+        <div class="footer">
+  				<div style="margin-left: 3%;">
+  					<p class="location">
+  						Ljubljana:
+  					</p>
+  					<p>
+  						<i class="fa fa-phone" aria-hidden="true"></i>
+  						+386 (0)80 911 911
+  					</p>
+  					<p>
+  						<i class="fa fa-envelope" aria-hidden="true"></i>
+  						<a href="mailto:sherlock@gmail.com">sherlock@gmail.com</a>
+  					</p>
+  				</div>
+  				<div style="margin-left: 3%;">
+  					<p class="location">
+  						London:
+  					</p>
+  					<p>
+  						<i class="fa fa-phone" aria-hidden="true"></i>
+  						+44 911 666
+  					</p>
+  					<p>
+  						<i class="fa fa-envelope" aria-hidden="true"></i>
+  						<a href="mailto:sherlockLondon@gmail.com">sherlockLondon@gmail.com</a>
+  					</p>
+  				</div>
+  				<div class="picture">
+            <a href="http://www.i-k-d.com">
+  					<img src="slike/IKD-Logo.jpg">
+            </a>
+
+            <a href="http://www.detektivska-zbornica-rs.si/">
+  					<img src="slike/Detektivska-zbornica-logo.png	">
+            </a>
+  				</div>
+  				<hr>
+  				<div class="podn">
+  					<p>
+  						©2017 Detektiv Sherlock Holmes, s.p. | Vse pravice pridržane
+  					</p>
+  					<p>
+  						Designed by
+  						<span style="color:#FFA71A">
+  							The Dream Team
+  						</span>
+  					</p>
+  				</div>
+  			</div>
+    </div>
+  </body>
+</html>
